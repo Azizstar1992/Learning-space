@@ -1,0 +1,67 @@
+package firstpackage;
+
+public class MergeSort {
+	static void mergesort(int[] inputarray) 
+	{
+		int inputLength = inputarray.length;
+		if(inputLength<2) {
+			return;
+		}
+		int midindex = inputLength/2;
+		int[] lefthalf = new int[midindex];
+		int[] righthalf = new int[inputLength-midindex];
+		
+		for(int i = 0; i < midindex;i++) 
+		{
+			lefthalf[i] = inputarray[i];
+		}
+		
+		for(int i = midindex ; i < midindex;i++) 
+		{
+			righthalf[i-midindex] = inputarray[i];
+		}
+		
+		mergesort(lefthalf);
+		mergesort(righthalf);
+		merge(inputarray, lefthalf,righthalf)l 
+	}
+	static void merge(int[] inputarray,int[] lefthalf,int[] righthalf) {
+		int lh = lefthalf.length,rh = righthalf.length;
+		int i =0, j = 0,k=0;
+		
+		while(i< lh && j <rh) 
+		{
+			if(lefthalf[i]<= righthalf[j]) {
+				inputarray[k] = lefthalf[i];
+				i++;
+			}
+			else 
+			{
+				inputarray[k] = righthalf[j];
+				j++;
+			}
+			k++;
+		}
+		while(i<lh) 
+		{
+			inputarray[k]= lefthalf[i];
+			i++;
+			k++;
+		}
+		while(j<rh) 
+		{
+			inputarray[k]= righthalf[j];
+			j++;
+			k++;
+		}
+	}
+
+	// Print the array
+	static void printArray(int arr[]) {
+		int n = arr.length;
+		for (int i = 0; i < n; ++i)
+			System.out.print(arr[i] + " ");
+		System.out.println();
+	}
+
+}
