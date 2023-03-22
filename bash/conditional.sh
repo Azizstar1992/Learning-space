@@ -5,6 +5,8 @@ echo "put a number down"
 read input
 
 
+#an important factor is that there should be a space between [ condition ] 
+
 if [ $input -eq 2 ]; then
 echo "its equal to 2"
 elif [ $input -gt 3 ];
