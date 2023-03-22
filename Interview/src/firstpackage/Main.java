@@ -85,6 +85,8 @@ public class Main {
 	    System.out.println("Sorted array:");
 	    printArray(arr1);
 		
+	    String s = "hello world my name is aziz";
+	    Arrays.stream(s.split(" ")).forEachOrdered(n ->System.out.println(n));
 
 	}
 
