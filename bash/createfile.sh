@@ -1,5 +1,6 @@
 #!/bin/sh
 echo "what file should i create"
 read name
-echo "file $name is being created"
-touch ${name}_file
+touch ${name}_file.sh
+echo "${name}_file.sh has been succesfully been created"
+ls
