@@ -82,7 +82,7 @@ public class Main {
 	   
 	    MergeSort.mergesort(arr1);
 
-	    System.out.println("Sorted array:");
+	    System.out.println("merge sorted array:");
 	    printArray(arr1);
 		
 	    String s = "hello world my name is aziz";

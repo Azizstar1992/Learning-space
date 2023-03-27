@@ -22,7 +22,7 @@ public class MergeSort {
 			leftHalf[i] = inputArray[i];
 		}
 		
-		for(int i = midindex ; i < midindex;i++) 
+		for(int i = midindex ; i < inputLength;i++) 
 		{
 			rightHalf[i-midindex] = inputArray[i];
 		}

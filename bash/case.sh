@@ -1,21 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
-echo "Please talk to me ..."
+echo -e "please enter your name\npress end to exit program"
+
 while :
 do
-  read INPUT_STRING
-  case $INPUT_STRING in
-	hello)
-		echo "Hello yourself!"
-		;;
-	bye)
-		echo "See you again!"
-		break
-		;;
-	*)
-		echo "Sorry, I don't understand"
-		;;
-  esac
+
+	read input
+
+	case $input in
+		end)
+			echo "thank you for using the case program"
+			break
+			;;
+		*)
+		echo -e "Hello $input, Welcome!\n"
+	esac
 done
-echo 
-echo "That's all folks!"
+sleep 1
+echo "Take care"
