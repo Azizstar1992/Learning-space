@@ -1,0 +1,4 @@
+hello this is a string inside the text file.
+so how do i make it happen.
+this is the line i want.
+this is the line i dont want, so you have this is the line i want
