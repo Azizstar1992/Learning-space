@@ -5,8 +5,8 @@ This page details Docker commands
 docker pull {image}:{version}
 
 #how to run a docker container
-step 1: download image
-step 2: docker run {image}:{version}
+-step 1: download image
+-step 2: docker run {image}:{version}
 
 
 #how to see all the images that you have downloaded
