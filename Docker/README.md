@@ -19,3 +19,12 @@
 #how to run a docker container in detached mode
 - step 1: download image
 - step 2: docker run -d {image}:{version}
+
+#how to run commands on running containers like Ubuntu
+- step 1: docker exec {container name} {your linux command here}
+
+#how to check information about docker version
+- docker version
+
+#how to name a docker container
+- docker run --name {name here} {image}
