@@ -43,7 +43,7 @@ how to name a docker container
 - docker run --name {name here} {image}
 
 # how to map ports 
-- docker run -p {listing port:container port} {image}
+- docker run -p {listening port:container port} {image}
 
 # how to build a docker image from a docker file
 - step 1: cd to the dockerfile directory
