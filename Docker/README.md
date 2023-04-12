@@ -62,6 +62,7 @@ A Docker image consists of read-only layers each of which represents a Dockerfil
 - COPY adds files from your Docker client’s current directory
 - RUN allows you to run commandline arguments used to install components according to your specification
 - CMD specifies what command to run within the container.
+- ENTRYPOINT specify a command and arguments taken from the commandline
 
 ## how to build a docker image from a docker file
 - step 1: cd to the dockerfile directory
