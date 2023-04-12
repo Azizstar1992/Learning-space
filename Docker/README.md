@@ -68,3 +68,7 @@ A Docker image consists of read-only layers each of which represents a Dockerfil
 - step 1: cd to the dockerfile directory
 - step 2: docker build -t {name of image} . # the dot is important 
 
+# Docker Networking 
+- bridge: the default,It is a private default network created on the host,Containers linked to this network have an internal IP address through which they communicate with each other easily
+- none, its an isolation of container,In this network driver, the Docker containers will neither have any access to external networks nor will it be able to communicate with other containers
+- host: It is a public network,It utilizes the host’s IP address and TCP port space to display the services running inside the container,
